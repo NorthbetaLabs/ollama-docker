@@ -27,7 +27,7 @@ services:
     ports:
       - 7869:11434
     environment:
-      - OLLAMA_KEEP_ALIVE=-1
+      - OLLAMA_KEEP_ALIVE=24h
       #- OLLAMA_MODELS=/home/myusername/workspace/Apps/OLLAMA/models
       - OLLAMA_ORIGINS=*
       - OLLAMA_FLASH_ATTENTION=1
