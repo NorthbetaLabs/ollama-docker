@@ -18,7 +18,7 @@ services:
       
   ollama:
     volumes:
-      - ./ollama/ollama:/root/.ollama
+      - /root/ollama-models:/root/.ollama
     container_name: ollama
     pull_policy: always
     tty: true
